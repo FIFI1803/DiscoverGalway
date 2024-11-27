@@ -1,0 +1,149 @@
+body {
+    padding-top: 44px;
+}
+/* Navbar */
+.navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-link {
+    color: #6b1640;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    align-items: center;
+}
+
+.basket-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.collapse.show .basket-button {
+    display: flex;
+}
+
+.basket-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: auto;
+}
+
+/* Navbar Brand Alignment */
+.navbar-brand {
+    font-weight: bold;
+    color: #6b1640;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .basket-button {
+        display: none;
+    }
+}
+
+/*Hero Section*/
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.carousel-inner {
+    height: 100%;
+}
+
+.hero-image {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; 
+    background: rgba(0, 0, 0, 0.4); 
+}
+
+.hero-overlay h1 {
+    font-size: clamp(5rem,15vw, 15rem);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.hero-overlay h3 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-style: italic;
+}
+/* About Sections */
+
+.subTitle{
+    position: relative;
+    color: #6b1640;  
+    font-weight: bold;
+}
+
+.subTitle h1 {
+    font-size: clamp(2.5rem, 4vw, 7.5rem);
+}
+.abtContent1 h2 {
+    font-size: 4vh;
+    color: #6b1640;
+    padding: auto;
+}
+.abtContent1 p {
+    font-size: 3vh;
+    padding: auto;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);   
+}
+.card {
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.1); 
+    z-index: 1; 
+}
+.card-img-top {
+    height: 300px;
+}
+
+/* Footer */
+footer{
+    background-color: #6b1640;
+}
